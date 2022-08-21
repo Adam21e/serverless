@@ -102,7 +102,7 @@ provider:
       - Arn: arn:aws:cloudwatch:us-east-1:000000000000:alarm:latency
         Type: AWS::CloudWatch::Alarm
   tracing:
-    # Can only be true if API Gateway is inside a stack.
+    # Optional, can only be true if API Gateway is inside a stack.
     apiGateway: true
     # Optional, can be true (true equals 'Active'), 'Active' or 'PassThrough'
     lambda: true
